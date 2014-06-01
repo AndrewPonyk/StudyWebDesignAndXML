@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Descendants in css</title>
+<style type="text/css">
+	div p{
+		color: fuchsia;
+	}
+	
+	.first + *{ /* elements which are exacly after .first*/
+		background: red;
+	}
+</style>
+</head>
+<body>
+	<div id="div1">
+		<p class="first">11</p>
+		<p>22</p>
+		<p>33</p>
+	</div>
+	
+	<ul id="ul1">
+		<li class="first">z</li>
+		<li>a</li>
+		<li>b</li>
+	</ul>
+</body>
+</html>
