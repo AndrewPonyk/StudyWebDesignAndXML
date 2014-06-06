@@ -3,6 +3,74 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+	#centerelem{
+		width: 200px;
+		margin: 0 auto;
+	}
+	
+	.left{
+		background: yellow;
+		float: left;
+		height: 400px;
+		padding-right: 500px;
+		max-width: 500px;
+	}
+	
+	.right{
+		background: blue;
+		float: left;
+		height: 400px;
+		margin-left: -300px;
+		width: 300px;
+	}
+	
+	#nav{
+		list-style-type: none;
+	}
+	#nav li{
+		border-right: 1px solid black;
+		float: left;
+		padding-left: 10px;
+		padding-right: 15px;
+		margin-top: 3px;
+		cursor: pointer;
+	}
+	
+	#navdiv{
+		background: #686397;
+		height: 26px;
+		line-height: 20px;
+	}
+	
+	#nav li.last{
+		border: none;
+	}
+	
+	#containerwithfloats{
+		border: 2px solid red;
+		overflow: auto;
+		 display: inline-block;
+	}
+	
+	.blue{
+		background: blue;
+		height: 44px;
+		display: table;
+	}
+	
+	.blue > *{
+		vertical-align: middle;
+	}
+	
+	.yellow{
+		background: yellow;
+		width: 300px;
+		height: 22px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+</style>
 </head>
 <body>
 
@@ -11,7 +79,7 @@
 	<h3>4. Layout 39m ds</h3>
 	<ol>
 		<li><a href="BoxModel.html"> Box model essentials 7m 3ds </a> </li>
-		<li>Simple floating 5m ds</li>
+		<li><a href="SimpleFloating.html"> Simple floating 5m ds</a></li>
 		<li>Using float for layout 5m ds</li>
 		<li>Fixing column drop 5m 3ds</li>
 		<li>Clearing essentials 4m 2ds</li>
@@ -19,5 +87,48 @@
 		<li>Creating a navbar from a list 4m 5ds</li>
 
 	</ol>
+	
+	<hr>
+	<div id="centerelem">
+		Element in the center
+	</div>
+	<hr>
+	<div>
+		Float with negative margin and big padding
+	</div>
+	<div id="containerwithfloats">
+		<div class="left">
+		11111111111111111 11111111111111 111111111111111111111111111 1111111111111 11111111111 111 111111111 11111111
+		111111111111 1111111111111111 11111111111111111111 11111111111111111111111111111111111111111111 111111111
+		111111111111111111111111111111 111111111111111111111 1111111111111111 111111111111111
+			background: yellow;
+			float: left;
+			height: 400px;
+			padding-right: 300px;
+		</div>
+		<div class="right">
+		22222222222222222 2222222 222222222222222 222 22222222222222222222222 22222222222222
+		222222222222 222 2222222222222222222222222
+				background: blue;
+			float: left;
+			height: 400px;
+			margin-left: -300px;
+			width: 300px;
+		</div>
+	</div>
+	<br>
+	<hr style="clear: both;"/>
+	<div>Using float with list</div>
+	<div id="navdiv">
+		<ul id="nav">
+			<li>first</li>
+			<li>second</li>
+			<li>third</li>
+			<li>fourth</li>
+			<li class="last">fifth</li>
+		</ul>
+	</div>
+	<hr>
+	
 </body>
 </html>
