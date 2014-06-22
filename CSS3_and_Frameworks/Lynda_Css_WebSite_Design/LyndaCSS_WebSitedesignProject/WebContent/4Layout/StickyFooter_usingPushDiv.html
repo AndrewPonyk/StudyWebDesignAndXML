@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create sticky footer</title>
+<style type="text/css">
+
+*{
+	margin: 0;
+}
+
+html, body { /* we must set html to 100% to, because it is parent of body*/
+	height: 100%;
+}
+
+
+
+.wrapper{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -65px;
+	background: #bbb;
+}
+
+/* There should also be no content inside the .push div as it is a hidden
+element that "pushes" down the footer so it doesn't overlap anything*/
+.footer, .push {
+	height: 65px;
+}
+
+.footer{
+	background: purple;
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p><p>Your website content here.</p>
+		<div class="push"></div>
+	</div>
+	<div class="footer">
+		<p>Copyright (c) 2008</p>
+	</div>
+</body>
+</html>

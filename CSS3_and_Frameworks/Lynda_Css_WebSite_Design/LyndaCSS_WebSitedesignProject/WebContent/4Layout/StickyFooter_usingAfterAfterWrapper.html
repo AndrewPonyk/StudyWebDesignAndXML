@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create sticky footer</title>
+<style type="text/css">
+*{
+	margin:0;
+}
+
+html,body{
+	height: 100%;
+	min-height: 100%;
+}
+
+.content{
+	min-height: 100%;
+	margin-bottom: -140px;
+}
+
+.content:after{
+	display: block;
+	content: "";
+}
+
+.footer, .content:after{
+	height: 140px;
+}
+.footer{
+	background: orange;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="content">
+		<p>Content</p>
+		<p>Content</p>
+		<p>Content</p>
+		<p>Content</p>
+		<p>Content</p><p>Content</p><p>Content</p><p>Content</p><p>Content</p>
+	</div>
+
+	<div class="footer"></div>
+
+</body>
+</html>
