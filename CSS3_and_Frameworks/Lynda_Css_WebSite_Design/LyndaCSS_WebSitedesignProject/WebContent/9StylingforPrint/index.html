@@ -2,9 +2,38 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Different style for printing</title>
+	<style type="text/css" media="screen">
+		.header{
+			font-size: 40px;
+			font-weight: bold;
+			height: 150px;
+		}
+		
+		.content{
+			font-size: 14px;
+			width: 800px;
+			margin: 0 auto;
+		}
+		
+		.footer{
+			font-size: 20px;
+			height: 100px;
+		}
+	</style>
+	<style type="text/css" media="print">
+		.header{
+			font-size: 15px;
+			height: 40px;
+		}
+		.footer{
+			display: none;
+		}
+	</style>
 </head>
 <body>
-
+	<div class="header">Header</div>
+	<div class="content">Main content of site</div>
+	<div class="footer">Footer</div>
 </body>
 </html>

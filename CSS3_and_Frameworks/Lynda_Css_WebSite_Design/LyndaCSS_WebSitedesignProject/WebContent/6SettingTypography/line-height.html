@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>line-height</title>
+
+<style type="text/css">
+	#div1{
+		border: 1px solid gold;
+		display: block;
+		line-height: 3;
+		width: 200px;
+	}
+	
+	#div2{
+		border: 1px solid gold;
+		display: block;
+		line-height: 300%;
+		width: 200px;
+	}
+	
+	#div3{
+		border: 1px solid red;
+		width: 300px;
+		line-height: 2;
+	}
+	
+	input{
+		padding: 20px 0 0;
+		line-height: 20px;
+	}
+</style>
+</head>
+<body>
+
+
+<div id="div1">
+	Hello from div1, some text inside this div. Line height = 3
+</div>
+<div id="div2">
+	Hello from div2, some text inside this div. Line height = 300%
+</div>
+<div id="div3">
+	<span>Span 1 some text inside this block</span>
+	<span>Span 2 content</span>
+	<span>Span 3</span>
+</div>
+<div id="div4"></div>
+
+
+<hr>
+<h4>Align text in input to bottom</h4>
+<input type="text" value="123" size="40">
+</body>
+</html>

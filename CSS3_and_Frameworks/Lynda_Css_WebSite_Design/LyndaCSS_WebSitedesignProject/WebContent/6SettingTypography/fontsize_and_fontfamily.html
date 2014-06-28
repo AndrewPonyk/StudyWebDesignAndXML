@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>font-size and font-family</title>
+<style>
+	@font-face {
+	    font-family: cool;
+	    src: url(Cool.ttf);
+	}
+	
+	#coolfont{
+		font-size: 28px;
+		font-family: cool;
+	}
+</style>
+</head>
+<body>
+<div>
+	p{
+		font-size:2em; /* the same as font-size:200%*/
+	}
+	<hr>
+	<h3>Nice collection of web fonts</h3>
+	<div>http://www.1001freefonts.com/</div>
+	<hr>
+	Font family : This is the method with the deepest support possible right now:
+	<pre>
+	@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff') format('woff'), /* Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+	</pre>
+	
+	<div id="coolfont">
+		This is nice ,really nice font
+	</div>
+	<hr>
+	<h3>Specify all the font properties in one declaration:</h3>
+	p.ex1
+	{
+	font:15px arial,sans-serif;
+	}
+	
+	<br>
+	
+	p.ex2
+	{
+	font:italic bold 12px/30px Georgia, serif;
+	} 
+	
+	<hr>
+	<h3>Setting font size and line height using '/'</h3>
+	<div style="font: 10px/25px Verdana;width: 200px">
+		Setting font size and line height using '/' .
+		font: 10px/20px Verdana : font-size is 10px , and line-heigth is 25px 
+	</div>
+</div>
+</body>
+</html>

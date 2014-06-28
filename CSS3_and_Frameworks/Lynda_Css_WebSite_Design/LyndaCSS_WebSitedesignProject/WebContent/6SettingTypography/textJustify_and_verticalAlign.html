@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text justify and vertical align</title>
+<style type="text/css">
+	#p1{
+		text-align: justify;
+		width: 300px;
+	}
+	
+	#p2{
+		width: 300px;
+		text-align: start; /* default value*/
+	}
+	
+	span {
+		vertical-align: middle;
+		display: inline-block;
+	}
+</style>
+</head>
+<body>
+	<h3>text-align: justify</h3>
+	<p id="p1">
+		Text inside paragraph. Has some align property set. Lorem imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput sodddddme lorem andd imput some lorem and imput some loremaa and imput some lorem and imput some lorem and 
+	</p>
+	
+	<h3>text-align: start (default value)</h3>
+	<p id="p2">
+		Text inside paragraph. Has some align property set. Lorem imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput some lorem and imput sodddddme lorem andd imput some lorem and imput some loremaa and imput some lorem and imput some lorem and 
+	</p>
+	
+	<hr>
+	<h2>Vertical align (Vertical align : aligns elements in line, not in block =) ())</h2>
+	
+	<div style="border:1px solid; width: 500px;height: 100px;line-height: 100px">
+		<span >11111111111111111</span>
+		<span >222222222</span>
+		<span style="vertical-align: middle;">33333</span>
+	</div>
+	<hr>
+	Good example of vertical-align
+	<p style="width: 400px;height: 100px;line-height:100px;background-color: gold">
+		<span style="height: 30px;width: 100px; background-color: red;vertical-align: middle;"></span>
+		<span style="vertical-align: middle;">text inside span</span>
+	</p>
+</body>
+</html>
