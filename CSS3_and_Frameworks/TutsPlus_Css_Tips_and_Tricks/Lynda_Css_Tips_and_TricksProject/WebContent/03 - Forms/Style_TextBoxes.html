@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nice styles for Inputs</title>
+<style type="text/css">
+	input[type="text"], textarea {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		outline: none;
+		padding: 5px;
+	}
+	
+	input[type="text"]:HOVER, textarea:HOVER {
+		box-shadow: 0 0 3px rgb(116,189,239);
+		transition: box-shadow 0.2s ease-in-out;
+		opacity: 0.5;
+	}
+	
+	input[type="text"]:FOCUS, textarea:FOCUS {
+		box-shadow: 0 0 6px rgb(116,189,239);
+		transition: box-shadow 0.2s ease-in-out;
+		border-color:  #74b9ef;
+		opacity: 1;
+	}
+</style>
+</head>
+<body>
+
+	<form>
+		<fieldset>
+			<legend>This is a form</legend>
+
+			<p>
+				<label for="demo-text">Text input:</label>
+				<input type="text" name="demo-text" id="demo-text" />
+			</p>
+
+			<p>
+				<label for="demo-text-2">Text input:</label>
+				<input type="text" name="demo-text-2" id="demo-text-2" />
+			</p>
+
+			<p>
+				<label for="demo-text-3">Text input:</label>
+				<input type="text" name="demo-text-3" id="demo-text-3" />
+			</p>
+
+			<p>
+				<label for="demo-textarea">Textarea:</label>
+				<textarea name="demo-textarea" id="demo-textarea" cols="30" rows="10"></textarea>
+			</p>
+
+		</fieldset>
+	</form>
+
+</body>
+</html>

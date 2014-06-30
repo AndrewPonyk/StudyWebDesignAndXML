@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Custom radiobuttons and checkboxes</title>
+<style type="text/css">
+	
+	input[type="checkbox"], input[type="radio"]{
+		display: none;
+	}
+	
+	input[type="checkbox"] + label:BEFORE {
+		background-color: white;
+		border: 1px solid;
+		display: inline-block;
+		content: "";
+		font-size: 12px;
+		height: 16px;
+		width: 16px;
+		line-height: 16px;
+		margin: -5px 10px 0 0;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	input[type="checkbox"]:checked + label:BEFORE {
+		content: '\2714';
+	}
+	
+	input[type="radio"] + label:BEFORE {
+		background-color: white;
+		border: 1px solid;
+		display: inline-block;
+		content: "";
+		border-radius: 6px;
+		font-size: 24px;
+		height: 12px;
+		width: 12px;
+		line-height: 12px;
+		margin: -5px 10px 0 0;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	input[type="radio"]:checked + label:BEFORE {
+		content: '\2022';
+	}
+</style>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>This is form</legend>
+			<input type="radio" name="g" id="radio1">
+			<label for="radio1">Radio 1</label>
+			<input type="radio" name="g" id="radio2">
+			<label for="radio2">Radio 2</label>
+			<input type="radio" name="g" id="radio3">
+			<label for="radio3">Radio 3</label>
+			<p>
+				<input type="checkbox" id="check1">
+				<label for="check1">Checkbox 1</label>
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

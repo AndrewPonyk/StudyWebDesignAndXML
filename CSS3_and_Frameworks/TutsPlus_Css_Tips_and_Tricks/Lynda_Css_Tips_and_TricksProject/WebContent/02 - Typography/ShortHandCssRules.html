@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Css shorthand Rules</title>
+    <style type="text/css">
+        @font-face{
+            font-family: "matlabfont";
+            src: url(fonts/eufb8.ttf);
+        }
+        
+          </style>
+    </head>
+    <body>
+        <p style="border-bottom: 1px solid  olive">
+            Shorthand rules in CSS : font, border, list-style, margin, padding, background
+        </p>
+
+        <div>
+            Example
+            <p style="font-family: matlabfont" >These css definitions are equal(абвгдеєжз)</p>
+            <pre>
+            .demo-p {
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 1.5;
+                    font-family: matlabfont ,Arial, sans-serif;
+                    background-color: #ccc;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    padding-left: 2em;
+                    padding-right: 2em;
+            }
+            </pre>
+
+            <pre>
+            .demo-p {
+                    font: italic bold 13px/1.5em matlabfont, Arial, sans-serif;
+                    background-color: #ccc;
+                    padding: 1em 2em;
+            }
+            </pre>
+        </div>
+    </body>
+</html>

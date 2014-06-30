@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vertical align 6 methods</title>
+<style type="text/css">
+	#parent1{
+		width: 500px;
+		height: 400px;
+		background-color: #ccc;
+	}
+	
+	#parent2{
+		width: 200px;
+		height: 100px;
+		background-color: orange;
+	}
+	
+	.div1{
+    	position:relative;
+    	width: 300px;
+    	height: 200px;
+    	background-color: orange;
+	}
+
+.div2 {
+    height: 100px;
+    width:100px;
+    background-color: red;
+    margin: auto 0;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#oldandgoodParent{
+	background: blue;
+	width: 400px;
+	height: 300px;
+	position: relative;
+	
+}
+
+#oldandgoodChild{
+	width: 200px;
+	height: 100px;
+	background: yellow;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+}
+</style>
+</head>
+<body>
+
+http://www.vanseodesign.com/css/vertical-centering/
+<br>
+http://stackoverflow.com/questions/396145/whats-the-best-way-of-centering-a-div-vertically-with-css
+	<hr>
+	<h3>Vertical align using display:table-cell</h3>
+	<pre>
+		#child {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+	</pre>
+	<hr>
+	<h3>Old and 'good' method for vertical align : position:50% and negative margin</h3>
+	<pre>
+		#oldandgoodParent{
+		background: blue;
+		width: 400px;
+		height: 300px;
+		position: relative;
+		
+	}
+	
+	#oldandgoodChild{
+		width: 200px;
+		height: 100px;
+		background: yellow;
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+	}
+	</pre>
+		<div id="oldandgoodParent">
+			<div id="oldandgoodChild">Negative margin and top 50%</div>
+		</div>
+	<hr>
+	<h3>Interesting way to center div</h3>
+	<pre>
+		.div1{
+    position:relative;
+    width: 300px;
+    height: 200px;
+    background-color: orange;
+}
+
+.div2 {
+    height: 100px;
+    width:100px;
+    background-color: red;
+    margin: auto 0;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+	</pre>
+	<div class="div1">
+		<div class="div2">Div to be aligned vertically</div>
+	</div>
+	<hr>
+	<h3>Also if you want vertical align of single text line - you can use 'line-height' property</h3>
+</body>
+</html>
