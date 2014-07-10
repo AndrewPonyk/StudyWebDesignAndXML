@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Even odd rows</title>
+<!--[if lt IE 9]>
+<script src="IE9.js"></script>
+<![endif]-->
+<style type="text/css">
+	table{
+		border: 2px solid #eaeaea;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	 td, th{
+		border: 1px solid #eaeaea;
+		padding: 0.8em;
+	}
+	
+	th{
+		text-align: left;
+	}
+	
+	ul {
+		border: 2px solid #bfbfbf;
+		display: inline-block;
+	}
+	
+	table tr:nth-child(even){
+		background-color: #fafafa;
+	}
+	
+	li:nth-child(2n){
+		color: blue;
+	}
+</style>
+</head>
+<body>
+
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>Adi</td>
+				<td>adi@gmail.com</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>john@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Robert</td>
+				<td>robert@gmail.com</td>
+			</tr>
+			<tr>
+				<td>James</td>
+				<td>James@gmail.com</td>
+			</tr>
+		</table>
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li>Item 7</li>
+			<li>Item 8</li>
+			<li>Item 9</li>
+			<li>Item 10</li>
+		</ul>
+<hr>
+'nth-child' - doesnt work in ie 8 , to fix it use 
+!--[if lt IE 9]>
+script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+![endif]--> 
+</body>
+</html>
