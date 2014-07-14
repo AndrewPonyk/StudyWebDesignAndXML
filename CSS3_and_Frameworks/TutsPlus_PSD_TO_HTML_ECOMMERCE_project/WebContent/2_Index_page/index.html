@@ -25,11 +25,12 @@
 
 	<div id="wrapper">
 		<header>
-			<section id="top-area"></section>
-			<!-- End top area -->
+			<section id="top-area">
 			<p>
-				Phone orders: 1-800-000 | Email us: <a href="mailto:office@shop.com">office@shop.com</a>
+				Phone orders: 1-800-0000 | Email us: <a href="mailto:office@shop.com">office@shop.com</a>
 			</p>
+			</section>
+			<!-- End top area -->
 			<section id="action-bar">
 				<div id="logo">
 					<a href="#"> <span id="logo-accent">e</span> Commerce
@@ -46,13 +47,12 @@
 								<li><a href="#">Smartphones</a></li>
 								<li><a href="#">Tablets</a></li>
 							</ul></li>
-						<li></li>
 					</ul>
 				</nav>
 
 				<div id="search-form">
 					<form action="" method="get">
-						<input type="search" placeholder="search..." class="search">
+						<input type="search" placeholder="Search by keyword" class="search">
 						<input type="submit" value="Search" class="search submit">
 					</form>
 					<!-- End search form -->
@@ -68,22 +68,28 @@
 									<li><a href="#">Sign In</a></li>
 									<li><a href="#">Sign Up</a></li>
 								</ul></li>
-							<li></li>
 						</ul>
 					</nav> -->
 
-					<nav class="dropdown">
-						<ul>
-							<li><a href="#"><img alt="" src="img/user-icon.gif">Andrew
-									<img src="img/down-arrow.gif" /></a>
-								<ul>
-									<li><a href="#">Order history</a></li>
-									<li><a href="#">Wishlist</a></li>
-									<li><a href="#">Sign out</a></li>
-								</ul></li>
-							<li></li>
-						</ul>
-					</nav>
+<nav class="dropdown">
+   <ul>
+      <li>
+         <a href="#"><img src="img/user-icon.gif" alt="Andrew Perkins"/>
+         Andrew Perkins <!-- !!!!!!!!!!!!!!!!!!! errorr in browser if 'Andrew Perkins' is from new line in source code it is not the same if there is not new line -->
+         <img src="img/down-arrow.gif" alt="Andrew Perkins"/></a>
+         <ul>
+            <li><a href="#">Order history</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Sign out</a></li>
+         </ul>
+      </li>
+   </ul>
+</nav>
+
+
+
+
+
 				</div>
 				<!-- End user menu -->
 
@@ -95,35 +101,219 @@
 			</section>
 			<!-- End action bar -->
 		</header>
-		
+
 		<section id="promo">
 			<div id="promo-details">
 				<h1>Today's Deals</h1>
-				<p></p>
-				<a href="#" class="default-btn"> </a>
+				<p>
+					Checkout this section of <br /> products at a discounted price.
+				</p>
+				<a href="#" class="default-btn"> Shop now </a>
 			</div>
 			<!-- End promo details -->
-			<img alt="" src="img/promo.png">
+			<img alt="" src="img/promo.png" align="Promotional Ad">
 		</section>
-		<!-- End promo -->	
+		<!-- End promo -->
+
+		<section id="main-content">
+			<h2>Featured</h2>
+			<hr>
+			<div id="products">
+				<div class="product">
+					<a><img src="img/product.gif" href="#" class="feature" /></a>
+					<h3>
+						<a href="#">This is product title</a>
+					</h3>
+					<p>This is short description.This is short description.This is
+						short description.This is short description.This is short
+						description.This is short description.This is short
+						description.This is short description.</p>
+					<h5>
+						Availability:<span class="instock">In Stock</span>
+					</h5>
+					<p>
+						<a href="#" class="cart-btn"> <span class="price">$499</span><img
+							alt="Add to Cart" src="img/white-cart.gif"> ADD TO CART
+						</a>
+					</p>
+					<p class="wish">
+						<a> <img src="img/wish.gif" alt="Add to Wishlist" /> Add to
+							Wishlist
+						</a>
+					</p>
+				</div>
+				<!-- End Product -->
+				<div class="product">
+					<a><img src="img/product.gif" href="#" class="feature" /></a>
+					<h3>
+						<a href="#">This is product title</a>
+					</h3>
+					<p>This is short description.This is short description.This is
+						short description.This is short description.This is short
+						description.This is short description.</p>
+					<h5>
+						Availability:<span class="instock">In Stock</span>
+					</h5>
+					<p>
+						<a href="#" class="cart-btn"> <span class="price">$499</span><img
+							alt="Add to Cart" src="img/white-cart.gif"> ADD TO CART
+						</a>
+					</p>
+					<p class="wish">
+						<a> <img src="img/wish.gif" alt="Add to Wishlist" /> Add to
+							Wishlist
+						</a>
+					</p>
+				</div>
+				<!-- End Product -->
+				<div class="product">
+					<a><img src="img/product.gif" href="#" class="feature" /></a>
+					<h3>
+						<a href="#">This is product title</a>
+					</h3>
+					<p>This is short description.This is short description.This is
+						short description.</p>
+					<h5>
+						Availability:<span class="outofstock">Out of Stock</span>
+					</h5>
+					<p>
+						<a href="#" class="cart-btn"> <span class="price">$499</span><img
+							alt="Add to Cart" src="img/white-cart.gif"> ADD TO CART
+						</a>
+					</p>
+					<p class="wish">
+						<a> <img src="img/wish.gif" alt="Add to Wishlist" /> Add to
+							Wishlist
+						</a>
+					</p>
+				</div>
+				<!-- End Product -->
+				<div class="product">
+					<a><img src="img/product.gif" href="#" class="feature" /></a>
+					<h3>
+						<a href="#">This is product title</a>
+					</h3>
+					<p>This is short description.</p>
+					<h5>
+						Availability:<span class="instock">In Stock</span>
+					</h5>
+					<p>
+						<a href="#" class="cart-btn"> <span class="price">$499</span><img
+							alt="Add to Cart" src="img/white-cart.gif"> ADD TO CART
+						</a>
+					</p>
+					<p class="wish">
+						<a> <img src="img/wish.gif" alt="Add to Wishlist" /> Add to
+							Wishlist
+						</a>
+					</p>
+				</div>
+				<!-- End Product -->
+			</div>
+			<!-- End products -->
+		</section>
+		<!-- End main-content -->
+	
+		<hr>
+		<footer>
+			<section id="contact">
+				<h3>
+					For phone orders please call 1-800-0000. You<br> can also email
+					us at<a href="mailto:office@shop.com">office@shop.com</a>
+				</h3>
+			</section>
+			<!-- End #contact -->
+			<hr>
+			<section id="links">
+				<div id="my-account">
+					<h4>MY ACCOUNT</h4>
+					<ul>
+						<li><a href="#">Sign In</a></li>
+						<li><a href="#">Sign Up</a></li>
+						<li><a href="#">Whishlist</a></li>
+						<li><a href="#">Order History</a></li>
+						<li><a href="#">Shopping Cart</a></li>
+					</ul>
+				</div>
+
+				<div id="info">
+					<h4>INFORMATION</h4>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<!-- End #info -->
+				<div id="extras">
+					<h4>EXTRAS</h4>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+				<!-- End #extras -->
+			</section>
+			<!-- End links -->
+			
+			<hr/>
+			<section class="clearfix">
+				<div id="copyright">
+					<div id="logo">
+						<a href="#"> <span id="logo-accent">e</span> Commerce
+						</a>
+					</div>
+					<!-- End #logo -->
+					<p id="store-desc">This is a short description of the store.</p>
+					<p id="store-copy">&copy; 2014 eCommerce. Theme designed by Adi
+					</p>
+				</div>
+				<!-- End #copyright -->
+				<div id="connect">
+					<h4>CONNECT WITH US</h4>
+					<ul>
+						<li class="twitter"><a href="#">Twitter</a></li>
+						<li class="fb"><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+				<!-- End #connect -->
+				<div id="payments">
+					<h4>SUPPORTED PAYMENT METHODS</h4>
+					<img alt="Payment methods" src="img/payment-methods.gif">
+				</div>
+				<!-- End #payments -->
+			</section>
+		</footer>
 	</div>
 	<!-- End wrapper -->
 
 
 	<script
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<script>
+		window.jQuery
+				|| document
+						.write(
+								'<script src="js/vendor/jquery-1.10.2.min.js"><\/script>__
+	</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+		(function(b, o, i, l, e, r) {
+							b.GoogleAnalyticsObject = l;
+							b[l] || (b[l] = function() {
+								(b[l].q = b[l].q || []).push(arguments)
+							});
+							b[l].l = +new Date;
+							e = o.createElement(i);
+							r = o.getElementsByTagName(i)[0];
+							e.src = '//www.google-analytics.com/analytics.js';
+							r.parentNode.insertBefore(e, r)
+						}(window, document, 'script', 'ga'));
+		ga('create', 'UA-XXXXX-X');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>

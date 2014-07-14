@@ -23,6 +23,7 @@ html {
     line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -48,7 +49,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -97,22 +98,197 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+p, h1, h2, h3, h4, h5, ul, li{
+	margin: 0;
+	padding: 0;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+/* ==========================================================================
+   Wrapper
+   ========================================================================== */
+#wrapper{
+	width: 1152px;
+	margin: 0 auto;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header{
+	background-color: #fff;
+}
+
+header a:link, header a:visited{
+	color: #5daad0;
+	text-decoration: none;
+}
+
+/* top-area*/
+#top-area{
+	height: 50px;
+	background-color: #f6f6f6;
+	padding: 0 30px;
+	line-height: 50px;
+}
 
 
+#action-bar{
+	height: 55px;
+	padding: 35px 0 0 30px;
+	vertical-align: middle;
+}
 
+#action-bar a:link, #action-bar a:visited{
+	color: #000;
+}
 
+#action-bar #logo-accent{
+	color : #5daad0;
+	float: left;
+}
 
+#action-bar #logo{
+	float: left;
+	margin-right: 100px;
+	font-size: 20px;
+}
 
+#action-bar .dropdown{
+	float: left;
+	padding-right: 25px;
+	margin-right: 25px;
+	border-right: 1px dotted #aaa;
+}
 
+#action-bar .dropdown ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
+#action-bar .dropdown ul li{
+	position: relative;
+	display: block;
+	float: left;
+}
 
+#action-bar .dropdown ul li ul{
+	display: none;
+}
 
+#action-bar .dropdown ul li a{
+	display: block;
+	text-decoration: none;
+	color: #5daad0;
+	background-color: #fff;
+	margin-left: 1px;
+	white-space: nowrap;
+	padding-left: 10px;
+}
 
+#action-bar .dropdown ul ul li a:link,#action-bar .dropdown ul ul li a:visited{
+	color: #000;
+}
 
+#action-bar .dropdown ul ul li a:hover{
+	color:#aaa;
+}
 
+#action-bar .dropdown li:hover ul{
+	position: absolute;
+	top: 100%; /* means 100 percent of parent height*/
+	border: 1px solid #c3c3c3;
+	display: block;
+	padding: 5px;
+	width: 160px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #fff;
+}
 
+#action-bar .dropdown li:hover li{
+	float: none;
+	background-color: #fff;
+}
 
+#action-bar #search-form{
+	float: left;
+	padding-right: 25px;
+	margin-right: 10px;
+	border-right: 1px dotted #c3c3c3/* nice gray for border*/;
+}
 
+#action-bar #search-form .search{
+	border: 1px solid #eee; 
+	padding: 5px 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#action-bar #search-form .submit{
+	background-color: #f6f6f6;
+}
+
+#action-bar #search-form .submit:hover{
+    background-color: #f2f2f2;
+}
+}
+
+#action-bar #view-cart {
+	float: left;
+	
+}
+
+#action-bar #view-cart a:link, #action-bar #view-cart a:visited {
+	color: #5daad0; /* nice color for links*/
+}
+
+#promo {
+	background-color: #172832;
+	height: 400px;
+	padding: 0 30px;
+}
+
+#promo-details{
+	float: left;
+}
+
+#promo img{
+	float: right;
+}
+
+#promo h1{
+	color: #fff;
+	font-size: 34px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#promo p{
+	color: #5daad0;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.default-btn{
+	background-color: #5daad0;
+	color: #fff;
+	padding: 15px 35px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0px 5px 0px #467f9c;
+	text-decoration: none;
+}
+
+.default-btn:hover{
+	box-shadow: 0px 5px 0px #296281;
+	color: #CCC;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -120,7 +296,6 @@ textarea {
 /*
  * Image replacement
  */
-
 .ir {
     background-color: transparent;
     border: 0;
